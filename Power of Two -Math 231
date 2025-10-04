@@ -1,0 +1,16 @@
+class Solution {
+    public boolean isPowerOfTwo(int n) {
+        // If n is less than or equal to 0, it can't be a power of two
+        if (n <= 0) {
+            return false;
+        }
+
+        // Keep dividing by 2 as long as n is divisible by 2
+        while (n % 2 == 0) {
+            n /= 2;
+        }
+
+        // After dividing out all factors of 2, n should be 1
+        return n == 1;
+    }
+}
