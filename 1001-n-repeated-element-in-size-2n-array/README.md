@@ -21,7 +21,6 @@
 </pre>
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
-
 <ul>
 	<li><code>2 &lt;= n &lt;= 5000</code></li>
 	<li><code>nums.length == 2 * n</code></li>
