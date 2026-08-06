@@ -4,7 +4,7 @@ class Solution:
         max_a=0
         while left<right:
             if len(height)>1:
-                max_a=max(max_a,(abs(right-left)*min(height[left],height[right])))
+                max_a=max(max_a,((right-left)*min(height[left],height[right])))
             if height[left]<height[right]:
                 left+=1
             else:
