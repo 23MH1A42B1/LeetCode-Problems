@@ -5,9 +5,7 @@ class Solution:
 
         for i in range(len(temperatures)):
             while stack and temperatures[i] > temperatures[stack[-1]]:
-                prev = stack.pop()
-                answer[prev] = i - prev
-
+                previ = stack.pop()
+                answer[previ] = i - previ
             stack.append(i)
-
         return answer
