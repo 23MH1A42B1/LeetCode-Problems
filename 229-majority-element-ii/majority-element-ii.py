@@ -10,8 +10,8 @@ class Solution:
 
         ans = []
 
-        for key, value in freq.items():
-            if value > len(nums) // 3:
-                ans.append(key)
+        for numb in freq:
+            if freq[numb]>len(nums)/3:
+                ans.append(numb)
 
         return ans
