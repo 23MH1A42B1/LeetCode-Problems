@@ -6,6 +6,6 @@ class Solution:
                 freq[num]=1
             else:
                 freq[num]+=1
-        for key,value in freq.items():
-            if value>len(nums)/2:
-                return key
+        for numb in freq:
+            if freq[numb]>=len(nums)/2:
+                return numb
